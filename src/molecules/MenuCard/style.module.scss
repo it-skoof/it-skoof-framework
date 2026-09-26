@@ -1,0 +1,39 @@
+@use '@atoms/variables.scss';
+@use '@atoms/mixins.scss';
+
+.card{
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(45deg,#0c0c0c, #131313);
+    width: 100%;
+    height: 100%;
+    border-radius: variables.$radius;
+    @include mixins.flexColumn;
+    @include mixins.center;
+    border: 1px solid #1b1b1b;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    svg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: overlay;
+        z-index: 0;
+    }
+}   
+.cardTitle{
+    position: relative;
+    font-size: 2.5rem;
+    line-height: 1;
+    z-index: 1;
+}
+.cardDesc{
+    color: #555555;
+    @media (min-width: 300px) {
+        font-size: 0.9rem;
+    }
+    @media (min-width: 1000px) {
+        font-size: 1.1rem;
+    }
+}

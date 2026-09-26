@@ -1,0 +1,38 @@
+@use '@atoms/mixins.scss';
+
+.header{
+    position: relative;
+    @include mixins.flexRow;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10rem;
+    flex: 0 0 auto;
+    // img{
+    //     width: 150px;
+    // }
+    nav > a{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    nav > a:last-child{
+        margin-right: none;
+    }
+    @media (min-width: 300px) {
+        padding: 0 2rem;
+        img{
+            width: 100px;
+        }
+    }
+    @media (min-width: 800px) {
+        padding: 0 10rem;
+        img{
+            width: 150px;
+        }
+    }
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(3, 20rem);
+        grid-template-rows: 20rem;
+    }
+}

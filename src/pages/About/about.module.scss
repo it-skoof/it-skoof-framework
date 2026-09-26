@@ -1,0 +1,75 @@
+@use '@/atoms/mixins.scss';
+.about{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 2rem 0;
+    translate: -50% -50%;
+    width: fit-content;
+    background: linear-gradient(to top, rgb(15, 15, 15) 50%, rgb(22, 22, 22) 90%);
+    border: 1px solid #1f1f1f;
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    & > svg{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: overlay;
+    }
+}
+.aboutText{
+    position: relative;
+    z-index: 1;
+    color: #dbdbdb;
+    max-width: 50rem;
+    min-width: 20rem;
+    padding: 2rem 3rem;
+    border-right: 1px solid #242424; 
+    h1{
+        color: #fffefe;
+        font-size: 2.4rem;
+    }
+}
+.aboutStack{
+    position: relative;
+    z-index: 1;
+    padding: 1rem 3rem;
+    min-width: 20rem;
+    h3{
+        color: #696969;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    ul{
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.4rem;
+        li{
+            font-size: 0.9rem;
+            color: #cacaca;
+            background-color: rgb(51, 51, 51);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+        }
+    }
+    .location{
+        margin-top: 5px;
+        @include mixins.flexRow;
+        align-items: center;
+        font-size: 1.5rem;
+         color: rgb(197, 197, 197);
+        span{
+            margin-left: 10px;
+            font-size: 0.9rem;
+            color: rgb(150, 150, 150);
+        }
+    }
+}

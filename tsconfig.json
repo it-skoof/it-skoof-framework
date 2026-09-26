@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "allowJs": true,
+        "rootDir": ".",
+        "allowSyntheticDefaultImports": true,
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "lib": ["ES2015", "ES2015.Iterable", "DOM"],
+        "types": ["node"],
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "paths": {
+            "@/*" : ["./src/*"],
+            "atoms/*": ["./src/atoms/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["/node_modules/"]
+}
