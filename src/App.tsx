@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
       errorElement: <>j</>
     },
     {
-      path: 'typer',
+      path: 'typer/*',
       lazy: async () => {
             const module = await import('typer/App')
             return {
