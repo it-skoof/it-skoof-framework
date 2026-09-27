@@ -14,7 +14,7 @@ export const Project = () => {
             <MenuCard title='MINIQUIZ' 
               to='/miniQuiz'
               desc={<>
-                <p>Проект по проверке скорости печати</p>  
+                <p>Проект по изучению иностранных слов по карточкам</p>  
             </>}/>
             <MenuCard title='CHUTYE' 
               to='https://chutye.com/'
