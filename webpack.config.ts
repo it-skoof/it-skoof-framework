@@ -65,6 +65,9 @@ export default defineConfig((env, {mode}) => {
                     'react-dom': {
                         singleton: true,
                     },
+                     'react-router-dom': {
+                        singleton: true,
+                    },
                 },
                 remotes: {
                    miniQuiz: `promise import("https://miniquizlet.netlify.app/assets/miniQuiz.js")`,
