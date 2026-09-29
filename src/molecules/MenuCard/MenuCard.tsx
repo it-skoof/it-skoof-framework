@@ -1,7 +1,7 @@
 import { ReactNode, useRef } from 'react'
 import style from './style.module.scss'
-import { Link, useLinkClickHandler, useNavigate } from 'react-router-dom'
-import { useCardMove } from '@/atoms/useCardMove'
+import { Link } from 'react-router-dom'
+import { useCardMove } from '@/atoms/lib/useCardMove'
 
 type MenuCardProps = {
   title: string,

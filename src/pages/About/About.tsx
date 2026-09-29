@@ -1,7 +1,7 @@
 import { ShapeSvg } from '@/atoms/ShapeSvg';
 import style from './about.module.scss'
 import { IoLocationOutline } from "react-icons/io5";
-import { useCardMove } from '@/atoms/useCardMove';
+import { useCardMove } from '@/atoms/lib/useCardMove';
 
 
 

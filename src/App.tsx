@@ -5,6 +5,7 @@ import { Project } from './pages/Projects/Project';
 import { About } from './pages/About/About';
 import { Redirect } from './atoms/Redirect';
 import { Loader } from './atoms/Loader';
+import { ErrorFallback } from './atoms/ErrorFallback';
 
 
 
@@ -20,7 +21,7 @@ const routes = createBrowserRouter([
             }
       },
       hydrateFallbackElement: <Loader isCentered/>,
-      errorElement: <>j</>
+      errorElement: <ErrorFallback message='Возникли проблемы при загрузке приложения, разбираемся'/>
     },
     {
       path: 'typer/*',
@@ -31,7 +32,7 @@ const routes = createBrowserRouter([
             }
       },
       hydrateFallbackElement: <Loader isCentered/>,
-      errorElement: <>j</>
+      errorElement: <ErrorFallback message='Возникли проблемы при загрузке приложения, разбираемся'/>
     },
     {
       path: '/',
